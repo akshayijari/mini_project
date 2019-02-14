@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+    margin: 100;
+    padding: 100px;
+    background: url(bgimg.jpg);
+	background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.details_body{
+    width: 1000px;
+    height: 600px;
+    
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.submit_button{
+text-align: center;
+}
+div.a{
+text-align: center;
+}
+</style>
+<head>
+	<title> Diagnosis </title>
+</head>
+
+<br>
+
+<!-- age	sex	cp	trestbps	chol	fbs	restecg	thalach	exang	oldpeak	slope	ca	thal	target -->
+
+<body>
+<div class="details_body">
+<fieldset>
+<legend>
+<div class="a">
+	<h1>ENTER YOUR DETAILS</h1>
+</div>
+</legend>
+
+	<h2>Age</h2>
+	<form action="" method="">
+			
+			<input type="number" min="1" max="100">
+	</form>
+	
+	<h2>Sex</h2>
+	<form action="" method="">
+			Male:
+			<input type="radio" name="morforo" value="">
+			Female:
+			<input type="radio" name="morforo" value="">
+			Others:
+			<input type="radio" name="morforo" value="">
+	</form>
+	
+	<!-- chest pain type -- Value 1: typical angina -- Value 2: atypical angina -- Value 3: non-anginal pain -- Value 4: asymptomatic-->
+	<h2>Chest Pain Type</h2>
+	<form action="" method="">
+			<select>
+			<option value="val0">Select</option>
+			<option value="val1">Typical Angina</option>
+			<option value="val2">Atypical Angina</option>
+			<option value="val3">Non-anginal Pain</option>
+			<option value="val4">Asymptomatic</option>
+			</select>
+	</form>
+	<!-- trestbps: resting blood pressure (in mm Hg on admission to the hospital) -->
+	<h2>trestbps </h2>
+	<form action="" method="">
+		
+			<label for="fname">trestbps:</label>
+			<input type="text" name=""size="25">
+			<label>mmHg</label>
+		
+	</form>
+		
+	<!-- chol: serum cholestoral in mg/dl -->
+	<h2>chol </h2>
+	<form action="" method="">
+			<label for="fname">chol:</label>
+			<input type="text"  name=""size="25">
+			<label>mg/dl</label>
+
+	</form>
+	
+	
+	<!--fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) -->
+	
+	<h2>Fasting Blood Sugar > 120 mg/dl</h2>
+	<form action="" method="">
+			Yes:
+			<input type="radio" name="yesorno" value="">
+			No:
+			<input type="radio" name="yesorno" value="">
+			
+	</form>
+	
+	<!--restecg: resting electrocardiographic results -- 
+		Value 0: normal -- 
+		Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) -- 
+		Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria -->
+	
+	
+	<h2>Resting Electrocardiographic Results</h2>
+	<form action="" method="">
+			<input type="radio" name="yesorno" value="">
+			normal
+			<br>
+			<input type="radio" name="yesorno" value="">
+			having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+			
+			<br>
+			<input type="radio" name="yesorno" value="">
+			showing probable or definite left ventricular hypertrophy by Estes' criteria
+			
+			
+	</form>
+	
+	<!-- thalach: maximum heart rate achieved -->
+	<h2> Maximum Heart Rate Achieved </h2>
+	<form action="" method="">
+			<input type="number" min="1" max="300">
+	</form>
+	
+	<!--exang: exercise induced angina (1 = yes; 0 = no)-->
+	
+	<h2>Exercise Induced Angina</h2>
+	<form action="" method="">
+			
+			<input type="radio" name="yesorno" value="">
+			Yes
+			
+			<input type="radio" name="yesorno" value="">
+			No
+	</form>
+	
+	<!--oldpeak = ST depression induced by exercise relative to rest -->
+	
+	<h2>ST depression induced by exercise relative to rest</h2>
+	<form action="" method="">
+		
+			<input type="text" name=""size="10">
+
+	</form>
+	
+	<!-- slope: the slope of the peak exercise ST segment -- Value 1: upsloping -- Value 2: flat -- Value 3: downsloping -->
+	<h2>The slope of the peak exercise ST segment</h2>
+	<form action="" method="">
+			<select>
+			<option value="val0">Select</option>
+			<option value="slope1">upsloping</option>
+			<option value="slope2">flat</option>
+			<option value="slope3">downsloping</option>
+			
+			</select>
+	</form>
+	
+	<!--  ca: number of major vessels (0-3) colored by flourosopy -->
+	<h2>Number of major vessels (0-3) colored by flourosopy</h2>
+	<form action="" method="">
+			<select>
+			<option value="val0">Select</option>
+			<option value="ca1">1</option>
+			<option value="ca2">2</option>
+			<option value="ca3">3</option>
+			
+			</select>
+	</form>
+	
+	<!-- thal: 3 = normal; 6 = fixed defect; 7 = reversable defect -->
+	<h2>Thal</h2>
+	<form action="" method="">
+			<select>
+			<option value="val0">Select</option>
+			<option value="thal1">3 = normal</option>
+			<option value="thal2">6 = fixed defect</option>
+			<option value="thal3">7 = reversable defect	</option>
+			
+			
+			</select>
+	</form>
+	
+	
+	<br><br><br>
+	
+	<div class="submit_button">
+	<input type="submit" value="submit">
+	</div>
+	
+		
+</fieldset>
+</div>
+</body>
+
+</html>
